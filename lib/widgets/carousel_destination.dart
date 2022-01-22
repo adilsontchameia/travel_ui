@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:travel_ui/models/destination_model.dart';
 
 class DestinationCarousel extends StatelessWidget {
-  late final Destination destination;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -42,6 +40,7 @@ class DestinationCarousel extends StatelessWidget {
   }
 
   Widget _carouselDestination() {
+   
     return Container(
       height: 300,
       color: Colors.blue,
@@ -49,6 +48,7 @@ class DestinationCarousel extends StatelessWidget {
         itemCount: destinations.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
+          Destination destination;
           return Container(
             margin: EdgeInsets.all(10.0),
             width: 220.0,
@@ -63,7 +63,9 @@ class DestinationCarousel extends StatelessWidget {
                     color: Colors.white,
                   ),
                   child: Column(
-                    children: [Text('${destination.activities.length}')],
+                    children: [
+                    Text('${destinations.activities.length}')  
+                    ],
                   ),
                 )
               ],
