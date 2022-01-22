@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:travel_ui/widgets/carousel_destination.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -39,6 +41,8 @@ class _HomePageState extends State<HomePage> {
               _buildIcon(context, 3),
             ],
           ),
+          SizedBox(height: 20.0),
+          DestinationCarousel(),
         ],
       )),
     );
