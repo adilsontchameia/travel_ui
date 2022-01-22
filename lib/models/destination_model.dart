@@ -55,14 +55,14 @@ List<Destination> destinations = [
     imageUrl: 'assets/imagem.jpg',
     city: 'Rundu',
     country: 'Namibia',
-    description: 'Exemplo de uma cidade',
+    description: 'Exemplo de uma cidade1',
     activities: activities,
   ),
   Destination(
     imageUrl: 'assets/imagem.jpg',
     city: 'New York',
     country: 'USA',
-    description: 'Exemplo de uma cidade',
+    description: 'Exemplo de uma cidade2',
     activities: activities,
   ),
 ];

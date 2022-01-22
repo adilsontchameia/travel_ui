@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:travel_ui/widgets/carousel_destination.dart';
+import 'package:travel_ui/widgets/destination_carousel.dart';
+import 'package:travel_ui/widgets/hotel_carousel.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -43,6 +44,8 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 20.0),
           DestinationCarousel(),
+          SizedBox(height: 5.0),
+          HotelCarousel()
         ],
       )),
     );
